@@ -2,7 +2,7 @@ import React from 'react'
 import HeroSection from './HeroSection'
 import ProductList from './ProductList'
 import FreelancerSection from './FreelancerSection'
-import Freelancerprofile from './FreelancerCard'
+import Freelancerprofile from './FreelancerCard/FreelancerCard'
 
 const Home = () => {
   return (
