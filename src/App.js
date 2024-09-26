@@ -12,6 +12,7 @@ import MyServices from "./createProfile/ProfileSettings/MyServices/MyServices";
 import Logout from "./createProfile/ProfileSettings/Logout/Logout";
 import Dashboard from "./createProfile/ProfileSettings/Dashboard/Dashboard";
 import Scroll from "./component/Scroll/Scroll";
+import ProductDisplay from "./component/home/ProductDisplay";
 
 const App = () => {
   const location = useLocation();
@@ -32,7 +33,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/freelancer/:id" element={<FreelancerDetail />} />
+          <Route path="/profile/:id" element={<FreelancerDetail />} />
+          <Route path="/product/:id" element={<ProductDisplay />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/myservices" element={<MyServices />} />
