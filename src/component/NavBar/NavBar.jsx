@@ -1,12 +1,18 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 
 const NavBar = () => {
+
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation(); // To track the current active route
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+  const navigate = useNavigate(); 
+
+  const joinus = () => {
+    navigate("/profile");
   };
 
   return (
@@ -96,7 +102,7 @@ const NavBar = () => {
 
         {/* Join Us Button for larger screens */}
         <div className="hidden md:flex">
-          <button className="h-10 w-40 bg-[#1F72F2] text-white rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1F72F2] hover:border hover:border-[#1F72F2]">
+          <button onClick={joinus} className="h-10 w-40 bg-[#1F72F2] text-white rounded-lg transition-all duration-300 hover:bg-white hover:text-[#1F72F2] hover:border hover:border-[#1F72F2]">
             Join Us
           </button>
         </div>

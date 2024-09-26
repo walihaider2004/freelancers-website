@@ -3,6 +3,7 @@ import OurStory from "./OurStory";
 import Aboutimg from '../images/teamTop.png';
 import { Link } from "react-router-dom";
 import { MdKeyboardDoubleArrowRight } from "react-icons/md";
+import Footer from "../Footer/Footer";
 
 const About = () => {
   return (
@@ -59,6 +60,7 @@ const About = () => {
         </div>
       </section>
       <OurStory />
+      <Footer />
     </>
   );
 };

@@ -4,6 +4,7 @@ import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 import ContactForm from './ContactForm';
 import ContactCards from './ContactCards';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const Contact = () => {
   return (
@@ -28,6 +29,7 @@ const Contact = () => {
     </div>
     <ContactCards/>
     <ContactForm/>
+    <Footer />
     </>
 
   );

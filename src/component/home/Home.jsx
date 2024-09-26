@@ -3,6 +3,7 @@ import HeroSection from './HeroSection'
 import ProductList from './ProductList'
 import FreelancerSection from './FreelancerSection'
 import Freelancerprofile from './FreelancerCard/FreelancerCard'
+import Footer from '../Footer/Footer'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
      <ProductList/>
      <FreelancerSection/>
      <Freelancerprofile/>
+     <Footer />
     </div>
   )
 }

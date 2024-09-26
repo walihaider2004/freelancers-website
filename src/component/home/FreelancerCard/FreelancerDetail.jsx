@@ -3,6 +3,7 @@ import { FaWhatsapp, FaLinkedin, FaGithub, FaTwitter, FaPhone, FaEnvelope } from
 import { IoLocationOutline } from "react-icons/io5";
 import { MdLanguage } from "react-icons/md";
 import { BsStarFill } from "react-icons/bs";
+import Footer from "../../Footer/Footer";
 
 const product = {
     id: 1,
@@ -145,13 +146,17 @@ const RightSideDetails = ({ product }) => (
 
 const ProductDetail = () => {
     return (
+        <>
         <div className="container mx-auto p-4 lg:px-20">
             {/* Main Layout: Left and Right Sections */}
             <div className="flex flex-col lg:flex-row mt-10 gap-10">
                 <LeftSideCard product={product} />
                 <RightSideDetails product={product} />
+              
             </div>
         </div>
+          <Footer />
+          </>
     );
 };
 
